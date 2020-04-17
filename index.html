@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Mike Daniels' Resume
+    </title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!--link rel="stylesheet" href="css/styles.css"-->
+
+    <style>
+    .flex-container {
+	display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .contact {
+	flex:1;
+	padding:20px;
+    background-color: lightgray;
+    }   
+    .bulk {
+	flex:3;
+	padding:20px;
+    }
+    hr{
+        margin-top: -20px;
+    }
+    p{
+        margin-top:1px;
+        margin-bottom: 1px;
+    }
+    h4{
+        margin-top: -15px;
+    }
+    @media screen and (max-width: 700px) {
+  .flex-container {   
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+
+<body>
+    <div id='app'></div>
+
+    <script type='text/babel'>
+
+        function App() {
+            return (
+                <div className="flex-container">
+                    <div className="contact">
+                 <h1> Mike Daniels </h1>    
+                 <br/>
+                        <div>
+                            <h2>CONTACT</h2>
+                            <h3>PHONE:</h3>
+                                <h4> 301-922-6937</h4>
+                            <h3>WEBSITE:</h3>
+                                <h4><a href="https://www.linkedin.com/in/medaniels213/" target="_blank">linkedin.com/in/medaniels213</a></h4>
+                            <h3>EMAIL:</h3>
+                                <h4>mikedaniels22@gmail.com</h4>
+                        </div>
+                    </div>
+                    <div  className="bulk">
+                        <div>
+                            <h2>EDUCATION</h2>
+                            <hr/>
+                            <p><b>University of the Sciences in Philadelphia</b></p>
+                            <p>2008</p>
+                            <p>B.S. Computer Science &#38; Minor in Mathematics</p>
+                        </div>
+                        <div>
+                            <h2>WORK EXPERIENCE</h2>
+                            <hr/>
+                            <p><b>Gaylord National Resort &#38; Convention Center</b> National Harbor Harbor, MD</p>
+                            <p><b>Property Systems Technician</b></p>
+                            <ul>
+                                <li>Consulting with upper management and IT Director to determine weekly and monthly goals for the department.</li>
+                                <li>Installing, maintaining, and upgrading ESX Servers utilizing vSphere Client and vCenter Server</li>
+                                <li>Installing and troubleshooting Windows 10 desktops and laptops for entire property. </li>
+                                <li>Responsible for the upgrade of all Aruba Access Points for staff members.</li>
+                                <li>Providing Network &#38; Desktop duties as needed. </li>
+                            </ul>
+                            <p><b>Network &#38; Desktop Technician</b></p>
+                            <ul>
+                                <li>Consulting daily with clients to specify system requirements and design solutions.</li>
+                                <li>Deploying, configuring, troubleshooting and maintaining workstations and other types of equipment (desktops, mobile devices, and Point of Sale POS stations, Kiosks, Atlas time clocks).</li>
+                                <li>Supporting and troubleshooting all network printers, scanners, telephones, and Polycoms.</li>
+                                <li>Configuring network ports on all network switches in convention center, meeting rooms, administrative offices, and outdoor areas.</li>
+                                <li>Installing CAT5, CAT6, CAT3, fiber, and coaxial cables throughout the convention center and meeting rooms.</li>
+                                <li>Troubleshooting wireless and wired issues throughout the convention center, meeting rooms, guest rooms, administrative offices, and outdoor areas.</li>
+                                <li>Utilizing Active Directory by adding, removing, and modifying Users, Groups, Computers, and Printers services and permissions, based off policy and procedures. </li>
+                            </ul>
+                            <p><b>Event Services</b></p>
+                            <ul>
+                                <li>Creating precise and timely delivery of conference events, while providing great customer service to guest and clients.</li>
+                                <li>Maintaining a safe, clean, and well organized working environment for fellow staff and guests.</li>
+                            </ul>
+                            <p><b>Independent Contractor</b> Local Churches &#38; Small Businesses</p>
+                            <p><b>Network/Systems Adminstrator</b></p>
+                            <ul>
+                                <li>Providing Desktop/Network Support including installing, maintaining, and troubleshooting of network and computer hardware.</li>
+                                <li>Managing domain users, computers in Microsoft Active Directory on MS Small Business Server environments.</li>
+                                <li>Performing regular backups and patching on Domain Server/Desktops.</li>
+                                <li>Performing Helpdesk Services by being primary contact for all software/hardware issues, and resolving or escalating issues to proper contact.</li>
+                                <li>Maintaining and troubleshooting Android phones and tablets for users.</li>
+                            </ul>
+                            <p><b>BioClinica Inc.</b> Audubon, PA</p>
+                            <p><b>.NET Forms Developer</b></p>
+                            <ul>
+                                <li>Developing case report forms using Visual Basic.NET 2003 (VB.NET) with an SQL database. </li>
+                                <li>Carrying out the SDLC by implementing design, development, and maintenance of the study structure.</li>
+                                <li>Training incoming Forms Designers by creating instructional documents, with MS Word and MS PowerPoint, and performing demonstrations with VB.NET.
+                                Special Project: Designed and produced an application for documenting and graphing a timeline of clients’ SDLC, using MS Excel, utilized by Senior Management.</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            )
+
+        }
+
+        ReactDOM.render(
+            <App />,
+            document.getElementById('app')
+        )
+    </script>
+</body>
+
+</html>
